@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Restaurant</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=K2D&amp;family=Kanit:ital,wght@1,900&amp;display=swap"
+    rel="stylesheet">
+  <link href="./edit.css" rel="stylesheet">
+</head>
+
+<body onload="init()">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">My Restaurant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="add.html">Add Restaurant</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-5">
+    <h1>Edit Restaurant</h1>
+    <div class="row form justify-content-center">
+      <div class="col-6 card">
+        <h5 class="card-header">Edit Restaurant Details</h5>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Restaurant Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Restaurant Name">
+            </div>
+            <div class="form-group">
+              <label for="type">Restaurant Type</label>
+              <input type="text" class="form-control" id="type" placeholder="Restaurant Type">
+            </div>
+            <div class="form-group">
+              <label for="imageURL">Restaurant ImageURL</label>
+              <input type="text" class="form-control" id="imageURL" placeholder="Restaurant imageURL">
+            </div>
+            <a href="" class="btn btn-success" onclick="edit()">Update Restaurant</a>
+            <a href="index.html" class="btn btn-danger">Cancel</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="edit.js"></script>
+</body>
+
+</html>

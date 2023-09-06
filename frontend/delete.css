@@ -1,0 +1,29 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #f44336;
+}
+
+.navbar {
+    background-color: #ff5722;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.card-header {
+    font-size: 24px;
+    /* เพิ่มขนาดฟอนต์ส่วนหัวของการ์ด */
+}
+
+.container p {
+    font-size: 28px;
+    /* เพิ่มขนาดตัวอักษรขององค์ประกอบ p */
+}
